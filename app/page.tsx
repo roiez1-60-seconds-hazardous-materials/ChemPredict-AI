@@ -815,12 +815,7 @@ export default function HomePage() {
               </div>
             )}
 
-            {/* Non-organic */}
-            {result.isOrganic === false && (
-              <div className="rounded-xl border border-blue-500/20 bg-blue-950/20 backdrop-blur p-4 text-center">
-                <p className="text-blue-300/80 text-sm">{tx("nonOrganic")}</p>
-              </div>
-            )}
+
 
             {/* ── AI Prediction ── */}
             {result.product && (
