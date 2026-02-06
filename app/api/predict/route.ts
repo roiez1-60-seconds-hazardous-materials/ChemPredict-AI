@@ -56,65 +56,104 @@ async function searchPubChem(query: string) {
   try {
     // Step 1: Search by name or CAS → get CID
     const encoded = encodeURIComponent(query.trim());
-    const cidRes = await fetch(
-      `https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/${encoded}/cids/JSON`,
-      { headers: { "User-Agent": "FireChem/1.0" } }
-    );
+    const cidUrl = `https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/${encoded}/cids/JSON`;
+    console.log("[PubChem] Step 1: Fetching CID from:", cidUrl);
+    
+    const cidRes = await fetch(cidUrl, {
+      headers: { "User-Agent": "FireChem/1.0" },
+    });
 
-    if (!cidRes.ok) return null;
+    console.log("[PubChem] Step 1 status:", cidRes.status);
+    if (!cidRes.ok) {
+      console.log("[PubChem] Step 1 FAILED - status:", cidRes.status);
+      return null;
+    }
 
-    const cidData = await cidRes.json();
+    const cidText = await cidRes.text();
+    console.log("[PubChem] Step 1 raw response (first 300):", cidText.substring(0, 300));
+    
+    let cidData;
+    try {
+      cidData = JSON.parse(cidText);
+    } catch (parseErr) {
+      console.error("[PubChem] Step 1 JSON parse error:", parseErr);
+      return null;
+    }
+    
     const cid = cidData?.IdentifierList?.CID?.[0];
+    console.log("[PubChem] CID found:", cid);
     if (!cid) return null;
 
     result.cid = cid;
     result.pubchemUrl = `https://pubchem.ncbi.nlm.nih.gov/compound/${cid}`;
 
     // Step 2: Get properties (SMILES, formula, name)
-    const propsRes = await fetch(
-      `https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/${cid}/property/CanonicalSMILES,IUPACName,MolecularFormula/JSON`,
-      { headers: { "User-Agent": "FireChem/1.0" } }
-    );
+    const propsUrl = `https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/${cid}/property/CanonicalSMILES,IUPACName,MolecularFormula/JSON`;
+    console.log("[PubChem] Step 2: Fetching properties");
+    
+    const propsRes = await fetch(propsUrl, {
+      headers: { "User-Agent": "FireChem/1.0" },
+    });
 
+    console.log("[PubChem] Step 2 status:", propsRes.status);
     if (propsRes.ok) {
-      const propsData = await propsRes.json();
-      const prop = propsData?.PropertyTable?.Properties?.[0];
-      if (prop) {
-        result.smiles = prop.CanonicalSMILES || null;
-        result.name = prop.IUPACName || null;
-        result.formula = prop.MolecularFormula || null;
+      const propsText = await propsRes.text();
+      console.log("[PubChem] Step 2 raw (first 300):", propsText.substring(0, 300));
+      
+      try {
+        const propsData = JSON.parse(propsText);
+        const prop = propsData?.PropertyTable?.Properties?.[0];
+        if (prop) {
+          result.smiles = prop.CanonicalSMILES || null;
+          result.name = prop.IUPACName || null;
+          result.formula = prop.MolecularFormula || null;
+          console.log("[PubChem] Got SMILES:", result.smiles);
+        }
+      } catch (parseErr) {
+        console.error("[PubChem] Step 2 JSON parse error:", parseErr);
       }
     }
 
     // Step 3: Get synonyms (CAS + common name)
-    const synRes = await fetch(
-      `https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/${cid}/synonyms/JSON`,
-      { headers: { "User-Agent": "FireChem/1.0" } }
-    );
+    const synUrl = `https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/${cid}/synonyms/JSON`;
+    console.log("[PubChem] Step 3: Fetching synonyms");
+    
+    const synRes = await fetch(synUrl, {
+      headers: { "User-Agent": "FireChem/1.0" },
+    });
 
+    console.log("[PubChem] Step 3 status:", synRes.status);
     if (synRes.ok) {
-      const synData = await synRes.json();
-      const synonyms =
-        synData?.InformationList?.Information?.[0]?.Synonym || [];
+      const synText = await synRes.text();
+      console.log("[PubChem] Step 3 raw (first 300):", synText.substring(0, 300));
+      
+      try {
+        const synData = JSON.parse(synText);
+        const synonyms =
+          synData?.InformationList?.Information?.[0]?.Synonym || [];
 
-      for (const syn of synonyms.slice(0, 50)) {
-        if (/^\d{2,7}-\d{2}-\d$/.test(syn)) {
-          result.cas = syn;
-          break;
+        for (const syn of synonyms.slice(0, 50)) {
+          if (/^\d{2,7}-\d{2}-\d$/.test(syn)) {
+            result.cas = syn;
+            break;
+          }
         }
-      }
 
-      for (const syn of synonyms.slice(0, 10)) {
-        if (!/^\d{2,7}-\d{2}-\d$/.test(syn) && syn.length < 80) {
-          result.name = syn;
-          break;
+        for (const syn of synonyms.slice(0, 10)) {
+          if (!/^\d{2,7}-\d{2}-\d$/.test(syn) && syn.length < 80) {
+            result.name = syn;
+            break;
+          }
         }
+      } catch (parseErr) {
+        console.error("[PubChem] Step 3 JSON parse error:", parseErr);
       }
     }
 
+    console.log("[PubChem] Final result:", JSON.stringify(result));
     return result;
   } catch (e) {
-    console.error("PubChem search error:", e);
+    console.error("[PubChem] search error:", e);
     return null;
   }
 }
@@ -293,9 +332,12 @@ async function handleSearch(query: string) {
     }
 
     // Not in local DB → search PubChem directly
+    console.log("[Search] Not in local DB, searching PubChem for:", query.trim());
     const pubchemResult = await searchPubChem(query.trim());
+    console.log("[Search] PubChem returned:", JSON.stringify(pubchemResult));
 
     if (!pubchemResult || !pubchemResult.smiles) {
+      console.log("[Search] FAILED - no result or no SMILES");
       return NextResponse.json({
         success: false,
         error: `לא נמצא חומר: ${query}`,
