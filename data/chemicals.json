@@ -11,7 +11,10 @@
       "corrosive"
     ],
     "category_he": "תגובתיים למים",
-    "category_en": "Water Reactive"
+    "category_en": "Water Reactive",
+    "reactive_groups": [
+      "RG21"
+    ]
   },
   {
     "name_he": "אשלגן (מתכת)",
@@ -25,7 +28,10 @@
       "corrosive"
     ],
     "category_he": "תגובתיים למים",
-    "category_en": "Water Reactive"
+    "category_en": "Water Reactive",
+    "reactive_groups": [
+      "RG21"
+    ]
   },
   {
     "name_he": "ליתיום (מתכת)",
@@ -39,7 +45,10 @@
       "corrosive"
     ],
     "category_he": "תגובתיים למים",
-    "category_en": "Water Reactive"
+    "category_en": "Water Reactive",
+    "reactive_groups": [
+      "RG21"
+    ]
   },
   {
     "name_he": "סידן קרביד",
@@ -52,7 +61,10 @@
       "flammable"
     ],
     "category_he": "תגובתיים למים",
-    "category_en": "Water Reactive"
+    "category_en": "Water Reactive",
+    "reactive_groups": [
+      "RG51"
+    ]
   },
   {
     "name_he": "אלומיניום אבקתי",
@@ -65,7 +77,10 @@
       "highly_flammable"
     ],
     "category_he": "תגובתיים למים",
-    "category_en": "Water Reactive"
+    "category_en": "Water Reactive",
+    "reactive_groups": [
+      "RG22"
+    ]
   },
   {
     "name_he": "מגנזיום (מתכת)",
@@ -78,7 +93,10 @@
       "highly_flammable"
     ],
     "category_he": "תגובתיים למים",
-    "category_en": "Water Reactive"
+    "category_en": "Water Reactive",
+    "reactive_groups": [
+      "RG21"
+    ]
   },
   {
     "name_he": "נתרן הידריד",
@@ -92,7 +110,10 @@
       "corrosive"
     ],
     "category_he": "תגובתיים למים",
-    "category_en": "Water Reactive"
+    "category_en": "Water Reactive",
+    "reactive_groups": [
+      "RG35"
+    ]
   },
   {
     "name_he": "זרחן לבן",
@@ -107,7 +128,10 @@
       "env_hazard"
     ],
     "category_he": "תגובתיים למים",
-    "category_en": "Water Reactive"
+    "category_en": "Water Reactive",
+    "reactive_groups": [
+      "RG21"
+    ]
   },
   {
     "name_he": "חומצה גופרתית",
@@ -120,7 +144,10 @@
       "toxic"
     ],
     "category_he": "חומצות",
-    "category_en": "Acids"
+    "category_en": "Acids",
+    "reactive_groups": [
+      "RG2"
+    ]
   },
   {
     "name_he": "חומצה מלחית",
@@ -133,7 +160,10 @@
       "toxic_gas"
     ],
     "category_he": "חומצות",
-    "category_en": "Acids"
+    "category_en": "Acids",
+    "reactive_groups": [
+      "RG1"
+    ]
   },
   {
     "name_he": "חומצה חנקתית",
@@ -146,7 +176,10 @@
       "oxidizer"
     ],
     "category_he": "חומצות",
-    "category_en": "Acids"
+    "category_en": "Acids",
+    "reactive_groups": [
+      "RG2"
+    ]
   },
   {
     "name_he": "חומצה זרחתית",
@@ -159,7 +192,10 @@
       "irritant"
     ],
     "category_he": "חומצות",
-    "category_en": "Acids"
+    "category_en": "Acids",
+    "reactive_groups": [
+      "RG60"
+    ]
   },
   {
     "name_he": "חומצה פלואורימית",
@@ -173,7 +209,11 @@
       "fatal"
     ],
     "category_he": "חומצות",
-    "category_en": "Acids"
+    "category_en": "Acids",
+    "reactive_groups": [
+      "RG1",
+      "RG48"
+    ]
   },
   {
     "name_he": "חומצה אצטית (חומץ מרוכז)",
@@ -186,7 +226,10 @@
       "flammable"
     ],
     "category_he": "חומצות",
-    "category_en": "Acids"
+    "category_en": "Acids",
+    "reactive_groups": [
+      "RG3"
+    ]
   },
   {
     "name_he": "חומצה כרומית",
@@ -200,7 +243,10 @@
       "carcinogen"
     ],
     "category_he": "חומצות",
-    "category_en": "Acids"
+    "category_en": "Acids",
+    "reactive_groups": [
+      "RG2"
+    ]
   },
   {
     "name_he": "חומצה פרכלורית",
@@ -214,7 +260,10 @@
       "explosive"
     ],
     "category_he": "חומצות",
-    "category_en": "Acids"
+    "category_en": "Acids",
+    "reactive_groups": [
+      "RG2"
+    ]
   },
   {
     "name_he": "חומצה פורמית",
@@ -227,7 +276,10 @@
       "flammable"
     ],
     "category_he": "חומצות",
-    "category_en": "Acids"
+    "category_en": "Acids",
+    "reactive_groups": [
+      "RG3"
+    ]
   },
   {
     "name_he": "חומצה אוקסלית",
@@ -240,7 +292,10 @@
       "toxic"
     ],
     "category_he": "חומצות",
-    "category_en": "Acids"
+    "category_en": "Acids",
+    "reactive_groups": [
+      "RG1"
+    ]
   },
   {
     "name_he": "נתרן הידרוקסיד",
@@ -252,7 +307,10 @@
       "corrosive"
     ],
     "category_he": "בסיסים",
-    "category_en": "Bases"
+    "category_en": "Bases",
+    "reactive_groups": [
+      "RG10"
+    ]
   },
   {
     "name_he": "אשלגן הידרוקסיד",
@@ -264,7 +322,10 @@
       "corrosive"
     ],
     "category_he": "בסיסים",
-    "category_en": "Bases"
+    "category_en": "Bases",
+    "reactive_groups": [
+      "RG10"
+    ]
   },
   {
     "name_he": "אמוניה",
@@ -278,7 +339,10 @@
       "flammable"
     ],
     "category_he": "בסיסים",
-    "category_en": "Bases"
+    "category_en": "Bases",
+    "reactive_groups": [
+      "RG7"
+    ]
   },
   {
     "name_he": "סידן הידרוקסיד",
@@ -291,7 +355,10 @@
       "corrosive"
     ],
     "category_he": "בסיסים",
-    "category_en": "Bases"
+    "category_en": "Bases",
+    "reactive_groups": [
+      "RG10"
+    ]
   },
   {
     "name_he": "סידן אוקסיד (סיד חי)",
@@ -304,7 +371,10 @@
       "water_reactive"
     ],
     "category_he": "בסיסים",
-    "category_en": "Bases"
+    "category_en": "Bases",
+    "reactive_groups": [
+      "RG10"
+    ]
   },
   {
     "name_he": "נתרן קרבונט (סודה לשתייה)",
@@ -316,7 +386,10 @@
       "irritant"
     ],
     "category_he": "בסיסים",
-    "category_en": "Bases"
+    "category_en": "Bases",
+    "reactive_groups": [
+      "RG10"
+    ]
   },
   {
     "name_he": "ליתיום הידרוקסיד",
@@ -328,7 +401,10 @@
       "corrosive"
     ],
     "category_he": "בסיסים",
-    "category_en": "Bases"
+    "category_en": "Bases",
+    "reactive_groups": [
+      "RG10"
+    ]
   },
   {
     "name_he": "נתרן ביקרבונט (סודה לשתייה)",
@@ -340,7 +416,10 @@
       "irritant"
     ],
     "category_he": "בסיסים",
-    "category_en": "Bases"
+    "category_en": "Bases",
+    "reactive_groups": [
+      "RG10"
+    ]
   },
   {
     "name_he": "בנזין",
@@ -354,7 +433,10 @@
       "carcinogen"
     ],
     "category_he": "דלקים",
-    "category_en": "Fuels"
+    "category_en": "Fuels",
+    "reactive_groups": [
+      "RG29"
+    ]
   },
   {
     "name_he": "סולר",
@@ -368,7 +450,10 @@
       "env_hazard"
     ],
     "category_he": "דלקים",
-    "category_en": "Fuels"
+    "category_en": "Fuels",
+    "reactive_groups": [
+      "RG29"
+    ]
   },
   {
     "name_he": "בוטאן (גז LPG)",
@@ -381,7 +466,10 @@
       "compressed_gas"
     ],
     "category_he": "דלקים",
-    "category_en": "Fuels"
+    "category_en": "Fuels",
+    "reactive_groups": [
+      "RG29"
+    ]
   },
   {
     "name_he": "אתילן גליקול (נוגד קיפאון)",
@@ -393,7 +481,10 @@
       "toxic"
     ],
     "category_he": "דלקים",
-    "category_en": "Fuels"
+    "category_en": "Fuels",
+    "reactive_groups": [
+      "RG29"
+    ]
   },
   {
     "name_he": "שמן הידראולי",
@@ -407,7 +498,10 @@
       "env_hazard"
     ],
     "category_he": "דלקים",
-    "category_en": "Fuels"
+    "category_en": "Fuels",
+    "reactive_groups": [
+      "RG29"
+    ]
   },
   {
     "name_he": "נפטא",
@@ -421,7 +515,10 @@
       "irritant"
     ],
     "category_he": "דלקים",
-    "category_en": "Fuels"
+    "category_en": "Fuels",
+    "reactive_groups": [
+      "RG29"
+    ]
   },
   {
     "name_he": "אתילן",
@@ -434,7 +531,10 @@
       "compressed_gas"
     ],
     "category_he": "דלקים",
-    "category_en": "Fuels"
+    "category_en": "Fuels",
+    "reactive_groups": [
+      "RG28"
+    ]
   },
   {
     "name_he": "אצטילן",
@@ -448,7 +548,10 @@
       "compressed_gas"
     ],
     "category_he": "דלקים",
-    "category_en": "Fuels"
+    "category_en": "Fuels",
+    "reactive_groups": [
+      "RG29"
+    ]
   },
   {
     "name_he": "ביודיזל (מתיל אסטר)",
@@ -461,7 +564,10 @@
       "irritant"
     ],
     "category_he": "דלקים",
-    "category_en": "Fuels"
+    "category_en": "Fuels",
+    "reactive_groups": [
+      "RG29"
+    ]
   },
   {
     "name_he": "כלור",
@@ -475,7 +581,10 @@
       "oxidizer"
     ],
     "category_he": "גזים",
-    "category_en": "Gases"
+    "category_en": "Gases",
+    "reactive_groups": [
+      "RG59"
+    ]
   },
   {
     "name_he": "פוספגן",
@@ -489,7 +598,10 @@
       "corrosive"
     ],
     "category_he": "גזים",
-    "category_en": "Gases"
+    "category_en": "Gases",
+    "reactive_groups": [
+      "RG40"
+    ]
   },
   {
     "name_he": "מימן גופרי",
@@ -503,7 +615,10 @@
       "toxic_gas"
     ],
     "category_he": "גזים",
-    "category_en": "Gases"
+    "category_en": "Gases",
+    "reactive_groups": [
+      "RG33"
+    ]
   },
   {
     "name_he": "פחמן חד-חמצני",
@@ -517,7 +632,10 @@
       "toxic_gas"
     ],
     "category_he": "גזים",
-    "category_en": "Gases"
+    "category_en": "Gases",
+    "reactive_groups": [
+      "RG50"
+    ]
   },
   {
     "name_he": "ציאניד מימן",
@@ -531,7 +649,10 @@
       "toxic_gas"
     ],
     "category_he": "גזים",
-    "category_en": "Gases"
+    "category_en": "Gases",
+    "reactive_groups": [
+      "RG11"
+    ]
   },
   {
     "name_he": "פחמן דו-חמצני",
@@ -543,7 +664,10 @@
       "compressed_gas"
     ],
     "category_he": "גזים",
-    "category_en": "Gases"
+    "category_en": "Gases",
+    "reactive_groups": [
+      "RG98"
+    ]
   },
   {
     "name_he": "גז טבעי (מתאן)",
@@ -556,7 +680,10 @@
       "compressed_gas"
     ],
     "category_he": "גזים",
-    "category_en": "Gases"
+    "category_en": "Gases",
+    "reactive_groups": [
+      "RG29"
+    ]
   },
   {
     "name_he": "פרופאן",
@@ -569,7 +696,10 @@
       "compressed_gas"
     ],
     "category_he": "גזים",
-    "category_en": "Gases"
+    "category_en": "Gases",
+    "reactive_groups": [
+      "RG29"
+    ]
   },
   {
     "name_he": "גופרית דו-חמצנית",
@@ -582,7 +712,10 @@
       "corrosive"
     ],
     "category_he": "גזים",
-    "category_en": "Gases"
+    "category_en": "Gases",
+    "reactive_groups": [
+      "RG46"
+    ]
   },
   {
     "name_he": "חנקן דו-חמצני",
@@ -596,7 +729,10 @@
       "corrosive"
     ],
     "category_he": "גזים",
-    "category_en": "Gases"
+    "category_en": "Gases",
+    "reactive_groups": [
+      "RG44"
+    ]
   },
   {
     "name_he": "נתרן היפוכלוריט (אקונומיקה)",
@@ -610,7 +746,10 @@
       "env_hazard"
     ],
     "category_he": "חומרים ביתיים",
-    "category_en": "Household"
+    "category_en": "Household",
+    "reactive_groups": [
+      "RG49"
+    ]
   },
   {
     "name_he": "נתרן לאוריל סולפט (סבון)",
@@ -622,7 +761,10 @@
       "irritant"
     ],
     "category_he": "חומרים ביתיים",
-    "category_en": "Household"
+    "category_en": "Household",
+    "reactive_groups": [
+      "RG98"
+    ]
   },
   {
     "name_he": "נתרן פרבורט (אבקת כביסה)",
@@ -635,7 +777,10 @@
       "irritant"
     ],
     "category_he": "חומרים ביתיים",
-    "category_en": "Household"
+    "category_en": "Household",
+    "reactive_groups": [
+      "RG49"
+    ]
   },
   {
     "name_he": "חומצה לימונית",
@@ -647,7 +792,10 @@
       "irritant"
     ],
     "category_he": "חומרים ביתיים",
-    "category_en": "Household"
+    "category_en": "Household",
+    "reactive_groups": [
+      "RG3"
+    ]
   },
   {
     "name_he": "איזופרופנול (חומר חיטוי)",
@@ -660,7 +808,10 @@
       "irritant"
     ],
     "category_he": "חומרים ביתיים",
-    "category_en": "Household"
+    "category_en": "Household",
+    "reactive_groups": [
+      "RG4"
+    ]
   },
   {
     "name_he": "נתרן דיכלורואיזוציאנורט (טבליות כלור)",
@@ -674,7 +825,10 @@
       "irritant"
     ],
     "category_he": "חומרים ביתיים",
-    "category_en": "Household"
+    "category_en": "Household",
+    "reactive_groups": [
+      "RG49"
+    ]
   },
   {
     "name_he": "נתרן מטא-סיליקט (חומר ניקוי תעשייתי)",
@@ -687,7 +841,10 @@
       "irritant"
     ],
     "category_he": "חומרים ביתיים",
-    "category_en": "Household"
+    "category_en": "Household",
+    "reactive_groups": [
+      "RG10"
+    ]
   },
   {
     "name_he": "אתנולאמין (חומר ניקוי רב שימושי)",
@@ -701,7 +858,11 @@
       "irritant"
     ],
     "category_he": "חומרים ביתיים",
-    "category_en": "Household"
+    "category_en": "Household",
+    "reactive_groups": [
+      "RG7",
+      "RG4"
+    ]
   },
   {
     "name_he": "פורמלדהיד",
@@ -715,7 +876,10 @@
       "carcinogen"
     ],
     "category_he": "חומרים תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG5"
+    ]
   },
   {
     "name_he": "טולואן דיאיזוציאנט (TDI)",
@@ -729,7 +893,10 @@
       "carcinogen"
     ],
     "category_he": "חומרים תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG18"
+    ]
   },
   {
     "name_he": "סטירן",
@@ -743,7 +910,11 @@
       "irritant"
     ],
     "category_he": "חומרים תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG28",
+      "RG76"
+    ]
   },
   {
     "name_he": "ויניל כלוריד",
@@ -757,7 +928,11 @@
       "compressed_gas"
     ],
     "category_he": "חומרים תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG17",
+      "RG76"
+    ]
   },
   {
     "name_he": "אקרילוניטריל",
@@ -771,7 +946,11 @@
       "carcinogen"
     ],
     "category_he": "חומרים תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG26",
+      "RG76"
+    ]
   },
   {
     "name_he": "אתילן אוקסיד",
@@ -786,7 +965,10 @@
       "explosive"
     ],
     "category_he": "חומרים תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG34"
+    ]
   },
   {
     "name_he": "כלורופורם",
@@ -800,7 +982,10 @@
       "irritant"
     ],
     "category_he": "חומרים תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG17"
+    ]
   },
   {
     "name_he": "דיכלורומתאן",
@@ -813,7 +998,10 @@
       "carcinogen"
     ],
     "category_he": "חומרים תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG17"
+    ]
   },
   {
     "name_he": "נתרן ציאניד",
@@ -827,7 +1015,10 @@
       "water_reactive"
     ],
     "category_he": "חומרים תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG11"
+    ]
   },
   {
     "name_he": "פנול",
@@ -841,7 +1032,10 @@
       "flammable"
     ],
     "category_he": "חומרים תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG31"
+    ]
   },
   {
     "name_he": "אניליו",
@@ -855,7 +1049,10 @@
       "env_hazard"
     ],
     "category_he": "חומרים תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG68"
+    ]
   },
   {
     "name_he": "חומצה ציאנורית",
@@ -867,7 +1064,10 @@
       "irritant"
     ],
     "category_he": "חומרים תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG60"
+    ]
   },
   {
     "name_he": "מי חמצן",
@@ -881,7 +1081,10 @@
       "irritant"
     ],
     "category_he": "מחמצנים",
-    "category_en": "Oxidizers"
+    "category_en": "Oxidizers",
+    "reactive_groups": [
+      "RG44"
+    ]
   },
   {
     "name_he": "אשלגן פרמנגנט",
@@ -895,7 +1098,10 @@
       "env_hazard"
     ],
     "category_he": "מחמצנים",
-    "category_en": "Oxidizers"
+    "category_en": "Oxidizers",
+    "reactive_groups": [
+      "RG44"
+    ]
   },
   {
     "name_he": "נתרן כלורט",
@@ -909,7 +1115,10 @@
       "env_hazard"
     ],
     "category_he": "מחמצנים",
-    "category_en": "Oxidizers"
+    "category_en": "Oxidizers",
+    "reactive_groups": [
+      "RG44"
+    ]
   },
   {
     "name_he": "אמוניום ניטרט",
@@ -922,7 +1131,11 @@
       "explosive"
     ],
     "category_he": "מחמצנים",
-    "category_en": "Oxidizers"
+    "category_en": "Oxidizers",
+    "reactive_groups": [
+      "RG44",
+      "RG69"
+    ]
   },
   {
     "name_he": "נתרן פרוקסיד",
@@ -936,7 +1149,10 @@
       "water_reactive"
     ],
     "category_he": "מחמצנים",
-    "category_en": "Oxidizers"
+    "category_en": "Oxidizers",
+    "reactive_groups": [
+      "RG44"
+    ]
   },
   {
     "name_he": "אשלגן ניטרט",
@@ -948,7 +1164,10 @@
       "oxidizer"
     ],
     "category_he": "מחמצנים",
-    "category_en": "Oxidizers"
+    "category_en": "Oxidizers",
+    "reactive_groups": [
+      "RG69"
+    ]
   },
   {
     "name_he": "נתרן פרכלורט",
@@ -961,7 +1180,10 @@
       "irritant"
     ],
     "category_he": "מחמצנים",
-    "category_en": "Oxidizers"
+    "category_en": "Oxidizers",
+    "reactive_groups": [
+      "RG44"
+    ]
   },
   {
     "name_he": "סידן היפוכלוריט",
@@ -975,7 +1197,10 @@
       "env_hazard"
     ],
     "category_he": "מחמצנים",
-    "category_en": "Oxidizers"
+    "category_en": "Oxidizers",
+    "reactive_groups": [
+      "RG44"
+    ]
   },
   {
     "name_he": "אצטון",
@@ -988,7 +1213,10 @@
       "irritant"
     ],
     "category_he": "ממסים",
-    "category_en": "Solvents"
+    "category_en": "Solvents",
+    "reactive_groups": [
+      "RG19"
+    ]
   },
   {
     "name_he": "מתנול",
@@ -1001,7 +1229,10 @@
       "toxic"
     ],
     "category_he": "ממסים",
-    "category_en": "Solvents"
+    "category_en": "Solvents",
+    "reactive_groups": [
+      "RG4"
+    ]
   },
   {
     "name_he": "אתנול",
@@ -1014,7 +1245,10 @@
       "irritant"
     ],
     "category_he": "ממסים",
-    "category_en": "Solvents"
+    "category_en": "Solvents",
+    "reactive_groups": [
+      "RG4"
+    ]
   },
   {
     "name_he": "טולואן",
@@ -1028,7 +1262,10 @@
       "irritant"
     ],
     "category_he": "ממסים",
-    "category_en": "Solvents"
+    "category_en": "Solvents",
+    "reactive_groups": [
+      "RG16"
+    ]
   },
   {
     "name_he": "בנזן",
@@ -1042,7 +1279,10 @@
       "toxic"
     ],
     "category_he": "ממסים",
-    "category_en": "Solvents"
+    "category_en": "Solvents",
+    "reactive_groups": [
+      "RG16"
+    ]
   },
   {
     "name_he": "קסילן",
@@ -1056,7 +1296,10 @@
       "irritant"
     ],
     "category_he": "ממסים",
-    "category_en": "Solvents"
+    "category_en": "Solvents",
+    "reactive_groups": [
+      "RG16"
+    ]
   },
   {
     "name_he": "אתר דיאתילי",
@@ -1069,7 +1312,10 @@
       "irritant"
     ],
     "category_he": "ממסים",
-    "category_en": "Solvents"
+    "category_en": "Solvents",
+    "reactive_groups": [
+      "RG14"
+    ]
   },
   {
     "name_he": "אצטאלדהיד",
@@ -1083,7 +1329,10 @@
       "carcinogen"
     ],
     "category_he": "ממסים",
-    "category_en": "Solvents"
+    "category_en": "Solvents",
+    "reactive_groups": [
+      "RG19"
+    ]
   },
   {
     "name_he": "טרפנטין",
@@ -1098,7 +1347,10 @@
       "env_hazard"
     ],
     "category_he": "ממסים",
-    "category_en": "Solvents"
+    "category_en": "Solvents",
+    "reactive_groups": [
+      "RG19"
+    ]
   },
   {
     "name_he": "מים",
@@ -1108,7 +1360,10 @@
     "cas": "7732-18-5",
     "hazards": [],
     "category_he": "מים",
-    "category_en": "Water"
+    "category_en": "Water",
+    "reactive_groups": [
+      "RG100"
+    ]
   },
   {
     "name_he": "תיוניל כלוריד",
@@ -1122,7 +1377,10 @@
       "toxic"
     ],
     "category_he": "תגובתיים למים",
-    "category_en": "Water Reactive"
+    "category_en": "Water Reactive",
+    "reactive_groups": [
+      "RG40"
+    ]
   },
   {
     "name_he": "זרחן טריכלוריד",
@@ -1136,7 +1394,10 @@
       "toxic"
     ],
     "category_he": "תגובתיים למים",
-    "category_en": "Water Reactive"
+    "category_en": "Water Reactive",
+    "reactive_groups": [
+      "RG55"
+    ]
   },
   {
     "name_he": "זרחן פנטכלוריד",
@@ -1150,7 +1411,11 @@
       "toxic"
     ],
     "category_he": "תגובתיים למים",
-    "category_en": "Water Reactive"
+    "category_en": "Water Reactive",
+    "reactive_groups": [
+      "RG55",
+      "RG59"
+    ]
   },
   {
     "name_he": "אצטיל כלוריד",
@@ -1164,7 +1429,10 @@
       "corrosive"
     ],
     "category_he": "תגובתיים למים",
-    "category_en": "Water Reactive"
+    "category_en": "Water Reactive",
+    "reactive_groups": [
+      "RG40"
+    ]
   },
   {
     "name_he": "כלורוסולפונית חומצה",
@@ -1178,7 +1446,10 @@
       "toxic"
     ],
     "category_he": "תגובתיים למים",
-    "category_en": "Water Reactive"
+    "category_en": "Water Reactive",
+    "reactive_groups": [
+      "RG21"
+    ]
   },
   {
     "name_he": "סיליקון טטרכלוריד",
@@ -1191,7 +1462,10 @@
       "corrosive"
     ],
     "category_he": "תגובתיים למים",
-    "category_en": "Water Reactive"
+    "category_en": "Water Reactive",
+    "reactive_groups": [
+      "RG55"
+    ]
   },
   {
     "name_he": "טיטניום טטרכלוריד",
@@ -1204,7 +1478,10 @@
       "corrosive"
     ],
     "category_he": "תגובתיים למים",
-    "category_en": "Water Reactive"
+    "category_en": "Water Reactive",
+    "reactive_groups": [
+      "RG55"
+    ]
   },
   {
     "name_he": "בורון טריפלואוריד",
@@ -1218,7 +1495,10 @@
       "toxic"
     ],
     "category_he": "תגובתיים למים",
-    "category_en": "Water Reactive"
+    "category_en": "Water Reactive",
+    "reactive_groups": [
+      "RG21"
+    ]
   },
   {
     "name_he": "אלומיניום כלוריד",
@@ -1231,7 +1511,10 @@
       "corrosive"
     ],
     "category_he": "תגובתיים למים",
-    "category_en": "Water Reactive"
+    "category_en": "Water Reactive",
+    "reactive_groups": [
+      "RG38"
+    ]
   },
   {
     "name_he": "נתרן מתכת (פרוסות)",
@@ -1245,7 +1528,10 @@
       "corrosive"
     ],
     "category_he": "תגובתיים למים",
-    "category_en": "Water Reactive"
+    "category_en": "Water Reactive",
+    "reactive_groups": [
+      "RG21"
+    ]
   },
   {
     "name_he": "סידן מתכת",
@@ -1258,7 +1544,10 @@
       "highly_flammable"
     ],
     "category_he": "תגובתיים למים",
-    "category_en": "Water Reactive"
+    "category_en": "Water Reactive",
+    "reactive_groups": [
+      "RG21"
+    ]
   },
   {
     "name_he": "בריום מתכת",
@@ -1272,7 +1561,10 @@
       "toxic"
     ],
     "category_he": "תגובתיים למים",
-    "category_en": "Water Reactive"
+    "category_en": "Water Reactive",
+    "reactive_groups": [
+      "RG21"
+    ]
   },
   {
     "name_he": "אולאום (חומצה גופרתית מעשנת)",
@@ -1286,7 +1578,10 @@
       "toxic"
     ],
     "category_he": "תגובתיים למים",
-    "category_en": "Water Reactive"
+    "category_en": "Water Reactive",
+    "reactive_groups": [
+      "RG21"
+    ]
   },
   {
     "name_he": "אשלגן מתכת (פיסות)",
@@ -1299,7 +1594,10 @@
       "highly_flammable"
     ],
     "category_he": "תגובתיים למים",
-    "category_en": "Water Reactive"
+    "category_en": "Water Reactive",
+    "reactive_groups": [
+      "RG21"
+    ]
   },
   {
     "name_he": "ליתיום אלומיניום הידריד",
@@ -1312,7 +1610,10 @@
       "highly_flammable"
     ],
     "category_he": "תגובתיים למים",
-    "category_en": "Water Reactive"
+    "category_en": "Water Reactive",
+    "reactive_groups": [
+      "RG35"
+    ]
   },
   {
     "name_he": "פלואור",
@@ -1326,7 +1627,10 @@
       "corrosive"
     ],
     "category_he": "גזים",
-    "category_en": "Gases"
+    "category_en": "Gases",
+    "reactive_groups": [
+      "RG59"
+    ]
   },
   {
     "name_he": "ברום",
@@ -1339,7 +1643,10 @@
       "corrosive"
     ],
     "category_he": "גזים",
-    "category_en": "Gases"
+    "category_en": "Gases",
+    "reactive_groups": [
+      "RG59"
+    ]
   },
   {
     "name_he": "חנקן דו חמצני",
@@ -1353,7 +1660,10 @@
       "compressed_gas"
     ],
     "category_he": "גזים",
-    "category_en": "Gases"
+    "category_en": "Gases",
+    "reactive_groups": [
+      "RG44"
+    ]
   },
   {
     "name_he": "אוזון",
@@ -1366,7 +1676,10 @@
       "oxidizer"
     ],
     "category_he": "גזים",
-    "category_en": "Gases"
+    "category_en": "Gases",
+    "reactive_groups": [
+      "RG44"
+    ]
   },
   {
     "name_he": "פוספין",
@@ -1379,7 +1692,10 @@
       "highly_flammable"
     ],
     "category_he": "גזים",
-    "category_en": "Gases"
+    "category_en": "Gases",
+    "reactive_groups": [
+      "RG51"
+    ]
   },
   {
     "name_he": "ארסין",
@@ -1392,7 +1708,10 @@
       "highly_flammable"
     ],
     "category_he": "גזים",
-    "category_en": "Gases"
+    "category_en": "Gases",
+    "reactive_groups": [
+      "RG51"
+    ]
   },
   {
     "name_he": "כלור דו חמצני",
@@ -1406,7 +1725,10 @@
       "explosive"
     ],
     "category_he": "גזים",
-    "category_en": "Gases"
+    "category_en": "Gases",
+    "reactive_groups": [
+      "RG44"
+    ]
   },
   {
     "name_he": "מתיל ברומיד",
@@ -1419,7 +1741,10 @@
       "env_hazard"
     ],
     "category_he": "גזים",
-    "category_en": "Gases"
+    "category_en": "Gases",
+    "reactive_groups": [
+      "RG17"
+    ]
   },
   {
     "name_he": "בוטדיאן",
@@ -1432,7 +1757,10 @@
       "carcinogen"
     ],
     "category_he": "גזים",
-    "category_en": "Gases"
+    "category_en": "Gases",
+    "reactive_groups": [
+      "RG65"
+    ]
   },
   {
     "name_he": "פאראתיון",
@@ -1445,7 +1773,10 @@
       "env_hazard"
     ],
     "category_he": "חומרי הדברה",
-    "category_en": "Pesticides"
+    "category_en": "Pesticides",
+    "reactive_groups": [
+      "RG13"
+    ]
   },
   {
     "name_he": "מלתיון",
@@ -1458,7 +1789,10 @@
       "env_hazard"
     ],
     "category_he": "חומרי הדברה",
-    "category_en": "Pesticides"
+    "category_en": "Pesticides",
+    "reactive_groups": [
+      "RG13"
+    ]
   },
   {
     "name_he": "כלורפיריפוס",
@@ -1471,7 +1805,10 @@
       "env_hazard"
     ],
     "category_he": "חומרי הדברה",
-    "category_en": "Pesticides"
+    "category_en": "Pesticides",
+    "reactive_groups": [
+      "RG13"
+    ]
   },
   {
     "name_he": "גליפוסאט",
@@ -1484,7 +1821,10 @@
       "env_hazard"
     ],
     "category_he": "חומרי הדברה",
-    "category_en": "Pesticides"
+    "category_en": "Pesticides",
+    "reactive_groups": [
+      "RG13"
+    ]
   },
   {
     "name_he": "דיכלורווס (DDVP)",
@@ -1497,7 +1837,10 @@
       "env_hazard"
     ],
     "category_he": "חומרי הדברה",
-    "category_en": "Pesticides"
+    "category_en": "Pesticides",
+    "reactive_groups": [
+      "RG13"
+    ]
   },
   {
     "name_he": "אנדוסולפן",
@@ -1510,7 +1853,10 @@
       "env_hazard"
     ],
     "category_he": "חומרי הדברה",
-    "category_en": "Pesticides"
+    "category_en": "Pesticides",
+    "reactive_groups": [
+      "RG17"
+    ]
   },
   {
     "name_he": "DDT",
@@ -1524,7 +1870,10 @@
       "env_hazard"
     ],
     "category_he": "חומרי הדברה",
-    "category_en": "Pesticides"
+    "category_en": "Pesticides",
+    "reactive_groups": [
+      "RG17"
+    ]
   },
   {
     "name_he": "דיאזינון",
@@ -1537,7 +1886,10 @@
       "env_hazard"
     ],
     "category_he": "חומרי הדברה",
-    "category_en": "Pesticides"
+    "category_en": "Pesticides",
+    "reactive_groups": [
+      "RG13"
+    ]
   },
   {
     "name_he": "ציפרמתרין",
@@ -1550,7 +1902,10 @@
       "env_hazard"
     ],
     "category_he": "חומרי הדברה",
-    "category_en": "Pesticides"
+    "category_en": "Pesticides",
+    "reactive_groups": [
+      "RG17"
+    ]
   },
   {
     "name_he": "2,4-D",
@@ -1564,7 +1919,10 @@
       "env_hazard"
     ],
     "category_he": "חומרי הדברה",
-    "category_en": "Pesticides"
+    "category_en": "Pesticides",
+    "reactive_groups": [
+      "RG3"
+    ]
   },
   {
     "name_he": "קרברל (סווין)",
@@ -1577,7 +1935,10 @@
       "env_hazard"
     ],
     "category_he": "חומרי הדברה",
-    "category_en": "Pesticides"
+    "category_en": "Pesticides",
+    "reactive_groups": [
+      "RG9"
+    ]
   },
   {
     "name_he": "אימידקלופריד",
@@ -1590,7 +1951,10 @@
       "env_hazard"
     ],
     "category_he": "חומרי הדברה",
-    "category_en": "Pesticides"
+    "category_en": "Pesticides",
+    "reactive_groups": [
+      "RG26"
+    ]
   },
   {
     "name_he": "חומצה הידרובורמית",
@@ -1603,7 +1967,10 @@
       "toxic"
     ],
     "category_he": "חומצות",
-    "category_en": "Acids"
+    "category_en": "Acids",
+    "reactive_groups": [
+      "RG1"
+    ]
   },
   {
     "name_he": "חומצה הידרויודית",
@@ -1616,7 +1983,10 @@
       "toxic"
     ],
     "category_he": "חומצות",
-    "category_en": "Acids"
+    "category_en": "Acids",
+    "reactive_groups": [
+      "RG1"
+    ]
   },
   {
     "name_he": "חומצה גופרתנית",
@@ -1629,7 +1999,10 @@
       "irritant"
     ],
     "category_he": "חומצות",
-    "category_en": "Acids"
+    "category_en": "Acids",
+    "reactive_groups": [
+      "RG1"
+    ]
   },
   {
     "name_he": "חומצה כלורית",
@@ -1642,7 +2015,10 @@
       "oxidizer"
     ],
     "category_he": "חומצות",
-    "category_en": "Acids"
+    "category_en": "Acids",
+    "reactive_groups": [
+      "RG1"
+    ]
   },
   {
     "name_he": "חומצה טטרפלואורובורית",
@@ -1655,7 +2031,10 @@
       "toxic"
     ],
     "category_he": "חומצות",
-    "category_en": "Acids"
+    "category_en": "Acids",
+    "reactive_groups": [
+      "RG1"
+    ]
   },
   {
     "name_he": "חומצה טריכלורואצטית",
@@ -1668,7 +2047,10 @@
       "env_hazard"
     ],
     "category_he": "חומצות",
-    "category_en": "Acids"
+    "category_en": "Acids",
+    "reactive_groups": [
+      "RG1"
+    ]
   },
   {
     "name_he": "הידרזין",
@@ -1683,7 +2065,10 @@
       "corrosive"
     ],
     "category_he": "בסיסים",
-    "category_en": "Bases"
+    "category_en": "Bases",
+    "reactive_groups": [
+      "RG10"
+    ]
   },
   {
     "name_he": "נתרן מתילט",
@@ -1697,7 +2082,10 @@
       "corrosive"
     ],
     "category_he": "בסיסים",
-    "category_en": "Bases"
+    "category_en": "Bases",
+    "reactive_groups": [
+      "RG10"
+    ]
   },
   {
     "name_he": "אשלגן טרט-בוטוקסיד",
@@ -1711,7 +2099,10 @@
       "corrosive"
     ],
     "category_he": "בסיסים",
-    "category_en": "Bases"
+    "category_en": "Bases",
+    "reactive_groups": [
+      "RG10"
+    ]
   },
   {
     "name_he": "בריום הידרוקסיד",
@@ -1724,7 +2115,10 @@
       "toxic"
     ],
     "category_he": "בסיסים",
-    "category_en": "Bases"
+    "category_en": "Bases",
+    "reactive_groups": [
+      "RG10"
+    ]
   },
   {
     "name_he": "חומצה על-אוקטית",
@@ -1738,7 +2132,10 @@
       "flammable"
     ],
     "category_he": "מחמצנים",
-    "category_en": "Oxidizers"
+    "category_en": "Oxidizers",
+    "reactive_groups": [
+      "RG44"
+    ]
   },
   {
     "name_he": "אשלגן דיכרומט",
@@ -1753,7 +2150,10 @@
       "env_hazard"
     ],
     "category_he": "מחמצנים",
-    "category_en": "Oxidizers"
+    "category_en": "Oxidizers",
+    "reactive_groups": [
+      "RG44"
+    ]
   },
   {
     "name_he": "חנקת כסף",
@@ -1767,7 +2167,10 @@
       "env_hazard"
     ],
     "category_he": "מחמצנים",
-    "category_en": "Oxidizers"
+    "category_en": "Oxidizers",
+    "reactive_groups": [
+      "RG44"
+    ]
   },
   {
     "name_he": "ברומט אשלגן",
@@ -1781,7 +2184,10 @@
       "carcinogen"
     ],
     "category_he": "מחמצנים",
-    "category_en": "Oxidizers"
+    "category_en": "Oxidizers",
+    "reactive_groups": [
+      "RG44"
+    ]
   },
   {
     "name_he": "נתרן ניטריט",
@@ -1794,7 +2200,10 @@
       "toxic"
     ],
     "category_he": "מחמצנים",
-    "category_en": "Oxidizers"
+    "category_en": "Oxidizers",
+    "reactive_groups": [
+      "RG44"
+    ]
   },
   {
     "name_he": "אמוניום פרכלורט",
@@ -1807,7 +2216,10 @@
       "explosive"
     ],
     "category_he": "מחמצנים",
-    "category_en": "Oxidizers"
+    "category_en": "Oxidizers",
+    "reactive_groups": [
+      "RG44"
+    ]
   },
   {
     "name_he": "כרומיום טריאוקסיד",
@@ -1822,7 +2234,10 @@
       "corrosive"
     ],
     "category_he": "מחמצנים",
-    "category_en": "Oxidizers"
+    "category_en": "Oxidizers",
+    "reactive_groups": [
+      "RG44"
+    ]
   },
   {
     "name_he": "מתיל איזוציאנט (MIC)",
@@ -1836,7 +2251,10 @@
       "water_reactive"
     ],
     "category_he": "תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG18"
+    ]
   },
   {
     "name_he": "אקרולאין",
@@ -1849,7 +2267,11 @@
       "highly_flammable"
     ],
     "category_he": "תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG5",
+      "RG28"
+    ]
   },
   {
     "name_he": "ברומואצטון",
@@ -1862,7 +2284,11 @@
       "irritant"
     ],
     "category_he": "תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG19",
+      "RG17"
+    ]
   },
   {
     "name_he": "כלורואצטון",
@@ -1876,7 +2302,11 @@
       "flammable"
     ],
     "category_he": "תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG19",
+      "RG17"
+    ]
   },
   {
     "name_he": "אתילן דיאמין",
@@ -1890,7 +2320,10 @@
       "toxic"
     ],
     "category_he": "תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG7"
+    ]
   },
   {
     "name_he": "דימתיל סולפט",
@@ -1904,7 +2337,10 @@
       "corrosive"
     ],
     "category_he": "תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG13"
+    ]
   },
   {
     "name_he": "כלורואצטלדהיד",
@@ -1917,7 +2353,11 @@
       "corrosive"
     ],
     "category_he": "תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG5",
+      "RG17"
+    ]
   },
   {
     "name_he": "מתיל כלורופורמיאט",
@@ -1931,7 +2371,10 @@
       "corrosive"
     ],
     "category_he": "תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG40"
+    ]
   },
   {
     "name_he": "אפיכלורוהידרין",
@@ -1945,7 +2388,11 @@
       "carcinogen"
     ],
     "category_he": "תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG34",
+      "RG17"
+    ]
   },
   {
     "name_he": "קרבון דיסולפיד",
@@ -1958,7 +2405,10 @@
       "toxic"
     ],
     "category_he": "תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG20"
+    ]
   },
   {
     "name_he": "ניטרובנזן",
@@ -1971,7 +2421,10 @@
       "carcinogen"
     ],
     "category_he": "תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG27"
+    ]
   },
   {
     "name_he": "כרומיל כלוריד",
@@ -1986,7 +2439,11 @@
       "water_reactive"
     ],
     "category_he": "תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG44",
+      "RG59"
+    ]
   },
   {
     "name_he": "בנזויל כלוריד",
@@ -2000,7 +2457,10 @@
       "water_reactive"
     ],
     "category_he": "תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG40"
+    ]
   },
   {
     "name_he": "תלת כלוריד זרחן",
@@ -2014,7 +2474,10 @@
       "water_reactive"
     ],
     "category_he": "תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG40"
+    ]
   },
   {
     "name_he": "אקרילאמיד",
@@ -2027,7 +2490,11 @@
       "carcinogen"
     ],
     "category_he": "תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG6",
+      "RG76"
+    ]
   },
   {
     "name_he": "מתנול (תעשייתי)",
@@ -2041,7 +2508,10 @@
       "env_hazard"
     ],
     "category_he": "תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG20"
+    ]
   },
   {
     "name_he": "דימתיל פורמאמיד (DMF)",
@@ -2054,7 +2524,10 @@
       "flammable"
     ],
     "category_he": "תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG6"
+    ]
   },
   {
     "name_he": "בנזידין",
@@ -2067,7 +2540,10 @@
       "toxic"
     ],
     "category_he": "תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG68"
+    ]
   },
   {
     "name_he": "תרכלורואתילן (PCE)",
@@ -2081,7 +2557,10 @@
       "env_hazard"
     ],
     "category_he": "ממסים",
-    "category_en": "Solvents"
+    "category_en": "Solvents",
+    "reactive_groups": [
+      "RG19"
+    ]
   },
   {
     "name_he": "טריכלורואתילן (TCE)",
@@ -2094,7 +2573,10 @@
       "carcinogen"
     ],
     "category_he": "ממסים",
-    "category_en": "Solvents"
+    "category_en": "Solvents",
+    "reactive_groups": [
+      "RG19"
+    ]
   },
   {
     "name_he": "1,4-דיוקסן",
@@ -2107,7 +2589,10 @@
       "carcinogen"
     ],
     "category_he": "ממסים",
-    "category_en": "Solvents"
+    "category_en": "Solvents",
+    "reactive_groups": [
+      "RG19"
+    ]
   },
   {
     "name_he": "מתיל אתיל קטון (MEK)",
@@ -2120,7 +2605,10 @@
       "irritant"
     ],
     "category_he": "ממסים",
-    "category_en": "Solvents"
+    "category_en": "Solvents",
+    "reactive_groups": [
+      "RG19"
+    ]
   },
   {
     "name_he": "טטרהידרופוראן (THF)",
@@ -2133,7 +2621,10 @@
       "irritant"
     ],
     "category_he": "ממסים",
-    "category_en": "Solvents"
+    "category_en": "Solvents",
+    "reactive_groups": [
+      "RG19"
+    ]
   },
   {
     "name_he": "דימתיל סולפוקסיד (DMSO)",
@@ -2145,7 +2636,10 @@
       "irritant"
     ],
     "category_he": "ממסים",
-    "category_en": "Solvents"
+    "category_en": "Solvents",
+    "reactive_groups": [
+      "RG19"
+    ]
   },
   {
     "name_he": "אתיל אצטט",
@@ -2158,7 +2652,10 @@
       "irritant"
     ],
     "category_he": "ממסים",
-    "category_en": "Solvents"
+    "category_en": "Solvents",
+    "reactive_groups": [
+      "RG13"
+    ]
   },
   {
     "name_he": "ציקלוהקסנון",
@@ -2171,7 +2668,10 @@
       "irritant"
     ],
     "category_he": "ממסים",
-    "category_en": "Solvents"
+    "category_en": "Solvents",
+    "reactive_groups": [
+      "RG19"
+    ]
   },
   {
     "name_he": "n-הקסן",
@@ -2184,7 +2684,10 @@
       "toxic"
     ],
     "category_he": "ממסים",
-    "category_en": "Solvents"
+    "category_en": "Solvents",
+    "reactive_groups": [
+      "RG19"
+    ]
   },
   {
     "name_he": "כלורו-בנזן",
@@ -2198,7 +2701,10 @@
       "env_hazard"
     ],
     "category_he": "ממסים",
-    "category_en": "Solvents"
+    "category_en": "Solvents",
+    "reactive_groups": [
+      "RG19"
+    ]
   },
   {
     "name_he": "איזואוקטן",
@@ -2210,7 +2716,10 @@
       "highly_flammable"
     ],
     "category_he": "דלקים",
-    "category_en": "Fuels"
+    "category_en": "Fuels",
+    "reactive_groups": [
+      "RG29"
+    ]
   },
   {
     "name_he": "פרופילן",
@@ -2223,7 +2732,10 @@
       "compressed_gas"
     ],
     "category_he": "דלקים",
-    "category_en": "Fuels"
+    "category_en": "Fuels",
+    "reactive_groups": [
+      "RG28"
+    ]
   },
   {
     "name_he": "מתיל טרט-בוטיל אתר (MTBE)",
@@ -2236,7 +2748,10 @@
       "env_hazard"
     ],
     "category_he": "דלקים",
-    "category_en": "Fuels"
+    "category_en": "Fuels",
+    "reactive_groups": [
+      "RG29"
+    ]
   },
   {
     "name_he": "אמוניה ביתית",
@@ -2249,7 +2764,10 @@
       "irritant"
     ],
     "category_he": "ביתיים",
-    "category_en": "Household"
+    "category_en": "Household",
+    "reactive_groups": [
+      "RG7"
+    ]
   },
   {
     "name_he": "נפט לבן (ווייט ספיריט)",
@@ -2262,7 +2780,10 @@
       "irritant"
     ],
     "category_he": "ביתיים",
-    "category_en": "Household"
+    "category_en": "Household",
+    "reactive_groups": [
+      "RG29"
+    ]
   },
   {
     "name_he": "חומצה סולפמית",
@@ -2275,7 +2796,10 @@
       "corrosive"
     ],
     "category_he": "ביתיים",
-    "category_en": "Household"
+    "category_en": "Household",
+    "reactive_groups": [
+      "RG60"
+    ]
   },
   {
     "name_he": "גז חרדל (דוגמה)",
@@ -2288,7 +2812,11 @@
       "carcinogen"
     ],
     "category_he": "תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG17",
+      "RG20"
+    ]
   },
   {
     "name_he": "כלורופיקרין",
@@ -2301,7 +2829,11 @@
       "irritant"
     ],
     "category_he": "תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG27",
+      "RG17"
+    ]
   },
   {
     "name_he": "עופרת טטראתיל",
@@ -2314,7 +2846,10 @@
       "env_hazard"
     ],
     "category_he": "תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG42"
+    ]
   },
   {
     "name_he": "כספית דו מתילית",
@@ -2327,7 +2862,10 @@
       "env_hazard"
     ],
     "category_he": "תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG42"
+    ]
   },
   {
     "name_he": "אוסמיום טטרוקסיד",
@@ -2341,7 +2879,10 @@
       "corrosive"
     ],
     "category_he": "תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG44"
+    ]
   },
   {
     "name_he": "בריליום",
@@ -2354,7 +2895,10 @@
       "carcinogen"
     ],
     "category_he": "תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG22"
+    ]
   },
   {
     "name_he": "ניטרוגליצרין",
@@ -2367,7 +2911,10 @@
       "toxic"
     ],
     "category_he": "מחמצנים",
-    "category_en": "Oxidizers"
+    "category_en": "Oxidizers",
+    "reactive_groups": [
+      "RG44"
+    ]
   },
   {
     "name_he": "TNT",
@@ -2380,7 +2927,10 @@
       "toxic"
     ],
     "category_he": "מחמצנים",
-    "category_en": "Oxidizers"
+    "category_en": "Oxidizers",
+    "reactive_groups": [
+      "RG44"
+    ]
   },
   {
     "name_he": "חומצה פיקרית",
@@ -2393,7 +2943,10 @@
       "toxic"
     ],
     "category_he": "מחמצנים",
-    "category_en": "Oxidizers"
+    "category_en": "Oxidizers",
+    "reactive_groups": [
+      "RG44"
+    ]
   },
   {
     "name_he": "כספית",
@@ -2406,7 +2959,10 @@
       "env_hazard"
     ],
     "category_he": "תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG23"
+    ]
   },
   {
     "name_he": "עופרת",
@@ -2419,7 +2975,10 @@
       "env_hazard"
     ],
     "category_he": "תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG23"
+    ]
   },
   {
     "name_he": "ארסן",
@@ -2433,7 +2992,10 @@
       "env_hazard"
     ],
     "category_he": "תעשייתיים",
-    "category_en": "Industrial"
+    "category_en": "Industrial",
+    "reactive_groups": [
+      "RG22"
+    ]
   },
   {
     "name_he": "אבץ אבקה",
@@ -2447,6 +3009,9 @@
       "env_hazard"
     ],
     "category_he": "תגובתיים למים",
-    "category_en": "Water Reactive"
+    "category_en": "Water Reactive",
+    "reactive_groups": [
+      "RG21"
+    ]
   }
 ]
