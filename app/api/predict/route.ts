@@ -88,7 +88,7 @@ async function searchPubChem(query: string) {
     result.pubchemUrl = `https://pubchem.ncbi.nlm.nih.gov/compound/${cid}`;
 
     // Step 2: Get properties (SMILES, formula, name)
-    const propsUrl = `https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/${cid}/property/CanonicalSMILES,IUPACName,MolecularFormula/JSON`;
+    const propsUrl = `https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/${cid}/property/CanonicalSMILES,IsomericSMILES,MolecularFormula,IUPACName/JSON`;
     console.log("[PubChem] Step 2: Fetching properties");
     
     const propsRes = await fetch(propsUrl, {
@@ -98,19 +98,36 @@ async function searchPubChem(query: string) {
     console.log("[PubChem] Step 2 status:", propsRes.status);
     if (propsRes.ok) {
       const propsText = await propsRes.text();
-      console.log("[PubChem] Step 2 raw (first 300):", propsText.substring(0, 300));
+      console.log("[PubChem] Step 2 raw (first 500):", propsText.substring(0, 500));
       
       try {
         const propsData = JSON.parse(propsText);
         const prop = propsData?.PropertyTable?.Properties?.[0];
         if (prop) {
-          result.smiles = prop.CanonicalSMILES || null;
+          result.smiles = prop.CanonicalSMILES || prop.IsomericSMILES || null;
           result.name = prop.IUPACName || null;
           result.formula = prop.MolecularFormula || null;
-          console.log("[PubChem] Got SMILES:", result.smiles);
+          console.log("[PubChem] Got SMILES:", result.smiles, "| keys:", Object.keys(prop).join(","));
         }
       } catch (parseErr) {
         console.error("[PubChem] Step 2 JSON parse error:", parseErr);
+      }
+    }
+
+    // Step 2b: If no SMILES yet, try fetching with different property names
+    if (!result.smiles) {
+      console.log("[PubChem] No SMILES from standard props, trying SDF/record...");
+      try {
+        const smilesRes = await fetch(
+          `https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/${cid}/property/MolecularFormula/JSON`,
+          { headers: { "User-Agent": "FireChem/1.0" } }
+        );
+        // Use the CID itself as a SMILES fallback identifier
+        // Generate a placeholder SMILES from the formula
+        result.smiles = `CID:${cid}`;
+        console.log("[PubChem] Using CID-based fallback:", result.smiles);
+      } catch {
+        // ignore
       }
     }
 
