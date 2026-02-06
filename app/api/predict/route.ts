@@ -1,6 +1,6 @@
 /**
  * API Route: /api/predict
- * v7 - חיפוש PubChem ישירות מ-Vercel (לא דרך HF)
+ * v8 - CAMEO reactive groups + PubChem direct search
  */
 
 import { NextRequest, NextResponse } from "next/server";
@@ -16,29 +16,40 @@ function findChemical(smiles: string) {
   return chemicals.find((c) => c.smiles === smiles);
 }
 
-function getCompatibility(cat1: string, cat2: string) {
+function getCompatibility(groups1: string[], groups2: string[]) {
   const rules = (compatibility as any).rules as any[];
-  return rules.find(
-    (r) =>
-      (r.group1 === cat1 && r.group2 === cat2) ||
-      (r.group1 === cat2 && r.group2 === cat1)
-  );
+  let worstRule: any = null;
+  
+  // Find the most severe matching rule across all group pairs
+  for (const g1 of groups1) {
+    for (const g2 of groups2) {
+      const match = rules.find(
+        (r: any) =>
+          (r.group1 === g1 && r.group2 === g2) ||
+          (r.group1 === g2 && r.group2 === g1)
+      );
+      if (match) {
+        if (!worstRule || 
+            (match.level === "incompatible" && worstRule.level !== "incompatible")) {
+          worstRule = match;
+        }
+      }
+    }
+  }
+  return worstRule;
 }
 
-const NON_ORGANIC_CATEGORIES = [
-  "Water Reactive",
-  "Acids",
-  "Bases",
-  "Oxidizers",
-  "Gases",
-  "Water",
+const ORGANIC_GROUPS = [
+  "RG3", "RG4", "RG5", "RG6", "RG7", "RG9", "RG13", "RG14", 
+  "RG16", "RG17", "RG18", "RG19", "RG20", "RG26", "RG28", "RG29",
+  "RG30", "RG31", "RG34", "RG37", "RG42", "RG47", "RG65", "RG66",
+  "RG68", "RG70", "RG71", "RG76",
 ];
 
-function isOrganicReaction(cat1: string, cat2: string): boolean {
-  const c1NonOrg = NON_ORGANIC_CATEGORIES.includes(cat1);
-  const c2NonOrg = NON_ORGANIC_CATEGORIES.includes(cat2);
-  if (c1NonOrg && c2NonOrg) return false;
-  return true;
+function isOrganicReaction(groups1: string[], groups2: string[]): boolean {
+  const c1Org = groups1.some(g => ORGANIC_GROUPS.includes(g));
+  const c2Org = groups2.some(g => ORGANIC_GROUPS.includes(g));
+  return c1Org && c2Org;
 }
 
 /* ───────── PubChem direct search ───────── */
@@ -201,16 +212,22 @@ export async function POST(req: NextRequest) {
     const chem2 = findChemical(smiles2);
     const cat1 = chem1?.category_en || chem1Custom?.category_en || "Unknown";
     const cat2 = chem2?.category_en || chem2Custom?.category_en || "Unknown";
+    
+    // Get reactive groups (CAMEO-based)
+    const groups1: string[] = (chem1 as any)?.reactive_groups || chem1Custom?.reactive_groups || ["RG99"];
+    const groups2: string[] = (chem2 as any)?.reactive_groups || chem2Custom?.reactive_groups || ["RG99"];
 
-    /* ── 2. Get compatibility rule ── */
-    const rule = getCompatibility(cat1, cat2);
+    /* ── 2. Get compatibility rule (using reactive groups) ── */
+    const rule = getCompatibility(groups1, groups2);
 
     /* ── 3. Check if organic reaction ── */
-    const organic = isOrganicReaction(cat1, cat2);
+    const organic = isOrganicReaction(groups1, groups2);
+    // Also skip AI if either SMILES is not a real SMILES (e.g. CID: fallback)
+    const hasRealSmiles = !smiles1.startsWith("CID:") && !smiles2.startsWith("CID:");
 
     let predictionData: any = null;
 
-    if (organic) {
+    if (organic && hasRealSmiles) {
       /* ── 4. Call HF Space for reaction prediction ── */
       try {
         const submitRes = await fetch(`${HF_SPACE_URL}/predict`, {
@@ -266,7 +283,7 @@ export async function POST(req: NextRequest) {
           }
         : null,
 
-      isOrganic: organic,
+      isOrganic: organic && hasRealSmiles,
 
       reactants: {
         chem1: chem1
