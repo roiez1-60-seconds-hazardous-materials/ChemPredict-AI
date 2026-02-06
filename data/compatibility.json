@@ -131,19 +131,24 @@
     {
       "group1": "Acids",
       "group2": "Household",
-      "level": "caution",
+      "level": "incompatible",
       "hazards_he": [
-        "שחרור גזים רעילים אפשרי",
-        "תגובה אקסותרמית"
+        "שחרור גז כלור (Cl₂) קטלני",
+        "תגובה אקסותרמית",
+        "שחרור גזים רעילים",
+        "סכנת הרעלה בנשימה"
       ],
       "hazards_en": [
-        "Possible toxic gas release",
-        "Exothermic reaction"
+        "Releases lethal chlorine gas (Cl₂)",
+        "Exothermic reaction",
+        "Toxic gas release",
+        "Inhalation poisoning risk"
       ],
-      "description_he": "ערבוב חומצות עם אקונומיקה (היפוכלוריט) משחרר גז כלור רעיל! ערבוב עם אמוניה משחרר כלוראמינים.",
-      "icon": "☠️",
+      "description_he": "סכנה חמורה! ערבוב חומצות עם חומרי ניקוי ביתיים (במיוחד אקונומיקה/היפוכלוריט) משחרר גז כלור (Cl₂) קטלני. גז כלור גורם לנזק חמור לריאות ולמוות. יש להפריד לחלוטין ולאוורר מיידית!",
+      "icon": "🔴",
       "gases": [
-        "Cl₂ (כלור — רעיל)"
+        "Cl₂ (כלור — קטלני!)",
+        "HCl (הידרוגן כלורידי — רעיל)"
       ]
     },
     {
